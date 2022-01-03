@@ -969,22 +969,23 @@
   }
 }
 
-html {
-  display: flex;
-  justify-content: space-around;
-}
-
 body {
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png");
   background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+.page {
+  margin: 0 auto;
 }
 @media screen and (max-width: 1024px) {
-  body {
+  .page {
     width: 640px;
   }
 }
 @media screen and (min-width: 1024px) {
-  body {
+  .page {
     width: 1440px;
   }
 }

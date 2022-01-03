@@ -8,16 +8,16 @@
 @import "consultations.scss";
 @import "stories.scss";
 @import "page-footer.scss";
-html {
-  display: flex;
-  justify-content: space-around;
-}
 body {
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png");
   background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+.page {
+  margin: 0 auto;
   @include for-small {
     width: 640px;
-    // background-color: red;
   }
   @include for-large {
     width: 1440px;
