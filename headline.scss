@@ -92,6 +92,8 @@
   }
   &__link {
     box-sizing: border-box;
+    width: 100%;
+    margin: 0px;
     color: white;
     padding: 30px 60px 30px 60px;
     font-family: "Mulish", sans-serif;
@@ -101,6 +103,5 @@
     text-align: center;
     background-color: blue;
     text-transform: uppercase;
-    width: 640px;
   }
 }
