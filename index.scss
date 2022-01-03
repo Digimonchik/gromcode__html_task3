@@ -17,7 +17,7 @@ body {
 .page {
   margin: 0 auto;
   @include for-small {
-    max-width: 640px;
+    width: 640px;
   }
   @include for-large {
     width: 1440px;
