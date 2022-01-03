@@ -1,0 +1,69 @@
+@import "layout.scss";
+.logo {
+  display: flex;
+  &__text {
+    padding-left: 10px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    vertical-align: 50px;
+    line-height: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #1968fc;
+  }
+}
+.page-header {
+  max-height: 50px;
+  box-sizing: border-box;
+  @include for-large {
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 160px;
+    margin-right: 160px;
+    justify-content: space-between;
+    &__navigation {
+      box-sizing: border-box;
+      width: 640px;
+      margin-right: 20px;
+      display: flex;
+      justify-content: flex-end;
+      &_item {
+        line-height: 20px;
+        font-family: "Mulish", sans-serif;
+        padding: 15px 20px 20px 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+      }
+    }
+    &__button {
+      font-family: "Mulish", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      min-width: 180px;
+      height: 50px;
+      text-transform: uppercase;
+      color: white;
+      background-color: #1968fc;
+      border: none;
+      outline: none;
+    }
+  }
+  @include for-small {
+    padding-left: 80px;
+    box-sizing: border-box;
+    display: flex;
+    width: 640px;
+    &__navigation {
+      display: none;
+    }
+    &__button {
+      display: none;
+    }
+  }
+}

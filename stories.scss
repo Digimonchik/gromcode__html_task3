@@ -1,0 +1,80 @@
+@import "layout.scss";
+.stories {
+  @include for-large {
+    margin-top: 120px;
+    margin-left: 160px;
+    &__header {
+      font-family: "Mulish", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 60px;
+      margin-bottom: 50px;
+    }
+    &__cards {
+      flex-direction: row;
+      display: flex;
+    }
+  }
+  @include for-small {
+    margin-top: 60px;
+    &__header {
+      font-family: "Mulish", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 60px;
+      margin-left: 60px;
+      margin-right: 60px;
+      margin-bottom: 50px;
+    }
+  }
+}
+.story-card {
+  @include for-large {
+    width: 420px;
+    margin-right: 60px;
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 40px;
+    &__image {
+      position: absolute;
+      left: 0px;
+    }
+    &__header {
+      font-family: "Mulish", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 40px;
+    }
+    &__description {
+      font-family: "Mulish", sans-serif;
+      width: 420px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+  @include for-small {
+    margin-right: 60px;
+    position: relative;
+    padding-left: 120px;
+    margin-bottom: 40px;
+    &__image {
+      position: absolute;
+      left: 60px;
+    }
+    &__header {
+      font-family: "Mulish", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 40px;
+    }
+    &__description {
+      font-family: "Mulish", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+}
