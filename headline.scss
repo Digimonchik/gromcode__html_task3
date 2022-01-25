@@ -2,8 +2,10 @@
 
 .headline {
   @include for-large {
-    margin: 160px;
+    margin: 0px 160px;
+    padding: 160px 0px;
     position: relative;
+
     &__title {
       font-family: "Mulish", sans-serif;
       font-weight: 600;
@@ -13,6 +15,7 @@
       color: #11223f;
     }
     &__description {
+      z-index: 1;
       width: 600px;
       margin-top: 20px;
       font-family: "Mulish", sans-serif;
@@ -41,6 +44,7 @@
     }
     &__image {
       position: absolute;
+      z-index: 0;
       right: 0px;
       top: 45px;
     }
