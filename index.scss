@@ -8,6 +8,16 @@
 @import "consultations.scss";
 @import "stories.scss";
 @import "page-footer.scss";
+
+.header__decoration {
+  width: 80px;
+  border: 1px solid #1968fc;
+  position: relative;
+  left: -40px;
+}
+.white {
+  border: 1px solid white;
+}
 body {
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png");
   background-size: cover;

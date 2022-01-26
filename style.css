@@ -74,7 +74,7 @@
 @media screen and (min-width: 1024px) {
   .headline {
     margin: 0px 160px;
-    padding: 160px 0px;
+    padding: 150px 0px;
     position: relative;
   }
   .headline__title {
@@ -86,7 +86,6 @@
     color: #11223f;
   }
   .headline__description {
-    z-index: 1;
     width: 600px;
     margin-top: 20px;
     font-family: "Mulish", sans-serif;
@@ -114,9 +113,11 @@
   }
   .headline__image {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
+    width: 500px;
+    height: 600px;
+    top: 120px;
     right: 0px;
-    top: 45px;
   }
   .headline__link {
     display: none;
@@ -140,9 +141,9 @@
     font-size: 20px;
     line-height: 40px;
   }
-}
-.headline__button-large {
-  display: none;
+  .headline__button-large {
+    display: none;
+  }
 }
 .headline__button-small {
   font-family: "Mulish", sans-serif;
@@ -280,7 +281,7 @@
 
 @media screen and (min-width: 1024px) {
   .work-flow {
-    margin: 160px 160px 80px 160px;
+    margin: 120px 160px 105px 160px;
   }
   .work-flow__header {
     font-family: "Mulish", sans-serif;
@@ -288,7 +289,6 @@
     font-size: 30px;
     text-transform: uppercase;
     line-height: 60px;
-    margin-bottom: 20px;
   }
   .work-flow__cards {
     box-sizing: border-box;
@@ -298,7 +298,7 @@
   .work-flow__card {
     background-color: white;
     height: 220px;
-    margin-top: 40px;
+    margin-top: 38px;
     padding-top: 40px;
     border: 2px;
     width: 320px;
@@ -307,10 +307,10 @@
     box-shadow: 0px 20px 60px 0px #3145f41a;
   }
   .work-flow__card:nth-child(2) {
-    margin-top: 80px;
+    margin-top: 78px;
   }
   .work-flow__card:last-child {
-    margin-top: 120px;
+    margin-top: 118px;
   }
   .work-flow__card_icon {
     position: absolute;
@@ -337,9 +337,8 @@
     font-family: "Mulish", sans-serif;
     font-weight: 700;
     font-size: 16px;
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
     line-height: 30px;
-    margin-top: 10px;
   }
   .work-flow__card_decoration {
     position: absolute;
@@ -420,7 +419,7 @@
 
 @media screen and (min-width: 1024px) {
   .features {
-    padding: 0px 160px 80px 160px;
+    margin: 0px 160px 120px 160px;
   }
   .features__header {
     font-family: "Mulish", sans-serif;
@@ -455,14 +454,14 @@
     width: 320px;
     height: 290px;
     box-sizing: border-box;
-    margin-top: 60px;
+    margin-top: 58px;
     position: relative;
   }
   .feature:nth-child(2) {
-    margin-top: 80px;
+    margin-top: 88px;
   }
   .feature:last-child {
-    margin-top: 120px;
+    margin-top: 128px;
   }
   .feature_header {
     display: flex;
@@ -563,13 +562,13 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 60px;
-    margin-left: 160px;
-    margin-bottom: 60px;
+    margin: 0px 160px 38px 160px;
   }
   .users_cards {
     display: flex;
     flex-wrap: wrap;
     margin-left: 160px;
+    margin-right: 140px;
   }
 }
 
@@ -649,7 +648,7 @@
 }
 @media screen and (min-width: 1024px) {
   .purposes {
-    margin: 160px;
+    margin: 120px 160px;
   }
   .purposes__header {
     font-family: "Mulish", sans-serif;
@@ -756,7 +755,6 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 60px;
-    margin-bottom: 50px;
   }
   .consultation__description {
     box-sizing: border-box;
@@ -765,6 +763,7 @@
     font-weight: 400;
     font-size: 20px;
     width: 640px;
+    margin-top: 48px;
     line-height: 40px;
     color: white;
   }
@@ -786,8 +785,7 @@
 
 @media screen and (min-width: 1024px) {
   .stories {
-    margin-top: 120px;
-    margin-left: 160px;
+    margin: 120px 160px 0px 160px;
   }
   .stories__header {
     font-family: "Mulish", sans-serif;
@@ -799,6 +797,7 @@
   }
   .stories__cards {
     flex-direction: row;
+    justify-content: space-between;
     display: flex;
   }
 }
@@ -821,6 +820,7 @@
 @media screen and (min-width: 1024px) {
   .story-card {
     width: 420px;
+    heigh: 240px;
     margin-right: 60px;
     position: relative;
     padding-left: 60px;
@@ -970,6 +970,17 @@
     max-height: 20px;
     max-width: 20px;
   }
+}
+
+.header__decoration {
+  width: 80px;
+  border: 1px solid #1968fc;
+  position: relative;
+  left: -40px;
+}
+
+.white {
+  border: 1px solid white;
 }
 
 body {
