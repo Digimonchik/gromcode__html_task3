@@ -579,7 +579,7 @@
     background-color: white;
     margin-bottom: 20px;
   }
-  .user:nth-child(n+1) {
+  .user:nth-child(n + 1) {
     margin-right: 20px;
   }
   .user_header {
@@ -606,7 +606,7 @@
     background-color: white;
     margin-bottom: 20px;
   }
-  .user:nth-child(n+1) {
+  .user:nth-child(n + 1) {
     margin-right: 20px;
   }
   .user_header {
