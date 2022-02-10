@@ -3,7 +3,7 @@
 }
 .logo__text {
   padding-left: 10px;
-  font-family: "Mulish", sans-serif;
+  font-family: "Mulish";
   font-weight: 600;
   font-size: 20px;
   vertical-align: 50px;
@@ -24,26 +24,27 @@
     box-sizing: border-box;
     display: flex;
     margin: 30px 160px;
-    justify-content: space-between;
   }
   .page-header__navigation {
     box-sizing: border-box;
-    width: 640px;
-    margin-right: 20px;
+    margin-left: auto;
+    width: 540px;
     display: flex;
     justify-content: flex-end;
   }
   .page-header__navigation_item {
     line-height: 20px;
-    font-family: "Mulish", sans-serif;
-    padding: 15px 20px 20px 20px;
+    margin: auto;
+    font-family: "Mulish";
+    font-style: normal;
     font-size: 14px;
     text-decoration: none;
-    color: black;
+    color: var(--color);
     font-weight: 600;
   }
   .page-header__button {
     font-family: "Mulish", sans-serif;
+    margin-left: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
@@ -58,10 +59,9 @@
 }
 @media screen and (max-width: 1024px) {
   .page-header {
-    padding-left: 80px;
+    margin: 0px 80px;
     box-sizing: border-box;
     display: flex;
-    width: 640px;
   }
   .page-header__navigation {
     display: none;
@@ -71,11 +71,12 @@
   }
 }
 
+.headline {
+  position: relative;
+}
 @media screen and (min-width: 1024px) {
   .headline {
-    margin: 0px 160px;
-    padding: 150px 0px;
-    position: relative;
+    margin: 120px 160px;
   }
   .headline__title {
     font-family: "Mulish", sans-serif;
@@ -114,28 +115,31 @@
   .headline__image {
     position: absolute;
     z-index: -1;
-    width: 500px;
-    height: 600px;
-    top: 120px;
     right: 0px;
+    top: 50px;
   }
   .headline__link {
     display: none;
   }
 }
 @media screen and (max-width: 1024px) {
+  .headline {
+    height: 1010px;
+    box-sizing: border-box;
+  }
   .headline__title {
-    padding-left: 80px;
-    margin-top: 80px;
+    margin: 80px 80px 0px;
     font-family: "Mulish", sans-serif;
     font-weight: 600;
     font-size: 40px;
+    color: #11223f;
+    text-align: left;
     line-height: 60px;
-    width: 480px;
+    width: 460px;
   }
   .headline__description {
     width: 480px;
-    padding-left: 80px;
+    margin: 20px 80px 0px;
     font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -144,40 +148,45 @@
   .headline__button-large {
     display: none;
   }
-}
-.headline__button-small {
-  font-family: "Mulish", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  margin-top: 40px;
-  margin-left: 80px;
-  width: 300px;
-  height: 50px;
-  outline: none;
-  border: none;
-  text-transform: uppercase;
-  color: white;
-  background-color: #1968fc;
-}
-.headline__image {
-  margin-top: 80px;
-  width: 600px;
-  height: 500px;
-}
-.headline__link {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0px;
-  color: white;
-  padding: 30px 60px 30px 60px;
-  font-family: "Mulish", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 40px;
-  text-align: center;
-  background-color: blue;
-  text-transform: uppercase;
+  .headline__button-small {
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 40px 80px 0px;
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #1968fc;
+  }
+  .headline__image {
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+    left: 20px;
+    bottom: 120px;
+  }
+  .headline__link {
+    box-sizing: border-box;
+    width: 100%;
+    height: 180px;
+    margin-top: 520px;
+    color: #ffffff;
+    padding: 30px 60px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png);
+    text-transform: uppercase;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -191,6 +200,7 @@
 }
 
 .review {
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
   background-color: white;
   box-sizing: border-box;
   box-shadow: 0px 20px 60px 0px #3145f41a;
@@ -201,7 +211,7 @@
 .review_brackets {
   position: absolute;
   top: 40px;
-  left: 440px;
+  right: 40px;
 }
 .review_image {
   margin-top: 40px;
@@ -220,12 +230,14 @@
 }
 .review_info {
   font-family: "Mulish", sans-serif;
+  color: #1967fa;
   font-weight: 600;
   font-size: 14px;
   line-height: 30px;
 }
 .review_text {
-  margin: 40px;
+  box-sizing: border-box;
+  margin: 38px 40px 40px;
   font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -287,6 +299,7 @@
     font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 30px;
+    box-sizing: border-box;
     text-transform: uppercase;
     line-height: 60px;
   }
@@ -296,9 +309,10 @@
     justify-content: space-between;
   }
   .work-flow__card {
+    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
     background-color: white;
     height: 220px;
-    margin-top: 38px;
+    margin-top: 48px;
     padding-top: 40px;
     border: 2px;
     width: 320px;
@@ -307,10 +321,10 @@
     box-shadow: 0px 20px 60px 0px #3145f41a;
   }
   .work-flow__card:nth-child(2) {
-    margin-top: 78px;
+    margin-top: 88px;
   }
   .work-flow__card:last-child {
-    margin-top: 118px;
+    margin-top: 128px;
   }
   .work-flow__card_icon {
     position: absolute;
@@ -367,11 +381,12 @@
     margin-bottom: 20px;
   }
   .work-flow__card {
+    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+    border: 3px solid red;
     background-color: white;
     height: 180px;
     margin-top: 40px;
-    padding-top: 40px;
-    border: 2px;
+    padding: 40px;
     width: 520px;
     box-sizing: border-box;
     position: relative;
@@ -396,8 +411,8 @@
     text-transform: uppercase;
   }
   .work-flow__card_description {
-    font-family: "Mulish", sans-serif;
-    font-weight: 700;
+    font-family: "Mulish";
+    font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     margin-top: 10px;
@@ -448,6 +463,9 @@
   }
 }
 
+.feature {
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+}
 @media screen and (min-width: 1024px) {
   .feature {
     background-color: white;
@@ -541,49 +559,60 @@
   .users__header {
     font-family: "Mulish", sans-serif;
     text-transform: uppercase;
-    margin-bottom: 20px;
     font-weight: 400;
     font-size: 30px;
     line-height: 60px;
     margin-top: 125px;
     margin-left: 60px;
   }
+  .users__header::before {
+    content: "Use Cases";
+  }
   .users_cards {
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 60px;
   }
 }
 @media screen and (min-width: 1024px) {
+  .users {
+    margin: 0px 160px;
+  }
   .users__header {
     font-family: "Mulish", sans-serif;
     text-transform: uppercase;
-    margin-bottom: 40px;
     font-weight: 400;
     font-size: 30px;
     line-height: 60px;
-    margin: 0px 160px 38px 160px;
+  }
+  .users__header::before {
+    content: "Who is VanGoux for";
   }
   .users_cards {
+    margin-top: 50px;
+    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 160px;
-    margin-right: 140px;
   }
 }
 
+.card {
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+}
 @media screen and (max-width: 1024px) {
-  .user {
+  .card {
+    box-sizing: border-box;
+    padding: 20px;
     width: 250px;
     height: 190px;
     background-color: white;
     margin-bottom: 20px;
   }
-  .user:nth-child(n+1) {
+  .card:nth-child(n+1) {
     margin-right: 20px;
   }
-  .user_header {
-    margin: 20px;
+  .card_header {
     font-family: "Mulish", sans-serif;
     text-transform: uppercase;
     font-weight: 600;
@@ -591,25 +620,22 @@
     line-height: 40px;
     color: #1967fa;
   }
-  .user_description {
+  .card_description {
     font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    color: #11223f;
     line-height: 30px;
-    margin: 0px 20px 20px 20px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .user {
+  .card {
     width: 360px;
     height: 160px;
     background-color: white;
     margin-bottom: 20px;
   }
-  .user:nth-child(n+1) {
-    margin-right: 20px;
-  }
-  .user_header {
+  .card_header {
     margin: 20px;
     font-family: "Mulish", sans-serif;
     text-transform: uppercase;
@@ -618,9 +644,10 @@
     line-height: 40px;
     color: #1967fa;
   }
-  .user_description {
+  .card_description {
     font-family: "Mulish", sans-serif;
     font-weight: 400;
+    color: #11223f;
     font-size: 16px;
     line-height: 30px;
     margin: 0px 20px 20px 20px;
@@ -629,7 +656,7 @@
 
 @media screen and (max-width: 1024px) {
   .purposes {
-    margin-top: 125px;
+    margin-top: 120px;
   }
   .purposes__header {
     font-family: "Mulish", sans-serif;
@@ -642,8 +669,7 @@
     margin-bottom: 20px;
   }
   .purposes__cards {
-    margin-right: 60px;
-    margin-left: 60px;
+    margin: 50px 60px 0px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -656,14 +682,16 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 60px;
-    margin-right: 60px;
-    margin-bottom: 50px;
   }
   .purposes__cards {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+.purposes .purpose {
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
 }
 @media screen and (max-width: 1024px) {
   .purposes .purpose {
@@ -769,7 +797,7 @@
   }
   .consultation__button {
     text-transform: uppercase;
-    font-family: "Mulish", sans-serif;
+    font-family: "Mulish";
     background-color: white;
     font-weight: 700;
     font-size: 14px;
@@ -785,7 +813,7 @@
 
 @media screen and (min-width: 1024px) {
   .stories {
-    margin: 120px 160px 0px 160px;
+    margin: 120px 160px 80px 160px;
   }
   .stories__header {
     font-family: "Mulish", sans-serif;
@@ -793,9 +821,9 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 60px;
-    margin-bottom: 50px;
   }
   .stories__cards {
+    margin-top: 64px;
     flex-direction: row;
     justify-content: space-between;
     display: flex;
@@ -820,7 +848,7 @@
 @media screen and (min-width: 1024px) {
   .story-card {
     width: 420px;
-    heigh: 240px;
+    height: 240px;
     margin-right: 60px;
     position: relative;
     padding-left: 60px;
@@ -869,6 +897,9 @@
   }
 }
 
+.page-footer {
+  background-color: #fbfbfb;
+}
 @media screen and (min-width: 1024px) {
   .page-footer {
     margin-left: 160px;
@@ -879,15 +910,13 @@
     box-sizing: border-box;
   }
   .page-footer__logo {
+    display: flex;
+  }
+  .page-footer__logo_icon {
     width: 50px;
     height: 50px;
   }
-  .page-footer__image {
-    position: absolute;
-    top: 0px;
-    right: 80px;
-  }
-  .page-footer__description {
+  .page-footer__logo_text {
     width: 200px;
     padding: 15px;
     font-family: "Mulish", sans-serif;
@@ -897,6 +926,11 @@
     line-height: 20px;
     color: #1968fc;
     margin-right: 50px;
+  }
+  .page-footer__image {
+    position: absolute;
+    top: 0px;
+    right: 80px;
   }
   .page-footer__navigation {
     font-family: "Work Sans", sans-serif;
@@ -946,21 +980,27 @@
     display: none;
   }
   .page-footer__logo {
+    display: flex;
+  }
+  .page-footer__logo_icon {
     max-height: 100%;
   }
-  .page-footer__image {
-    right: -40px;
-    position: absolute;
-  }
-  .page-footer__description {
+  .page-footer__logo_text {
     padding: 15px;
     font-family: "Mulish", sans-serif;
     font-weight: 600;
     font-size: 14px;
     vertical-align: 50px;
     line-height: 20px;
+    background-color: #1968fc0d;
     color: #1968fc;
     margin-right: 50px;
+  }
+  .page-footer__image {
+    width: 60px;
+    height: 55px;
+    right: 40px;
+    position: absolute;
   }
   .page-footer__social-link {
     padding: 15px;
@@ -972,15 +1012,26 @@
   }
 }
 
+:root {
+  --color: #000000;
+}
+
 .header__decoration {
   width: 80px;
-  border: 1px solid #1968fc;
+  height: 2px;
+  background-color: #1968fc;
+  box-shadow: 0px 2px 0px #d1e1fe;
   position: relative;
-  left: -40px;
+  top: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .header__decoration {
+    left: -40px;
+  }
 }
 
 .white {
-  border: 1px solid white;
+  border-bottom: 2px solid white;
 }
 
 body {
@@ -989,7 +1040,7 @@ body {
 }
 
 .page {
-  margin: 0 auto;
+  margin: auto;
 }
 @media screen and (max-width: 1024px) {
   .page {

@@ -1,16 +1,16 @@
 @import "layout.scss";
 .stories {
   @include for-large {
-    margin: 120px 160px 0px 160px;
+    margin: 120px 160px 80px 160px;
     &__header {
       font-family: "Mulish", sans-serif;
       text-transform: uppercase;
       font-weight: 400;
       font-size: 30px;
       line-height: 60px;
-      margin-bottom: 50px;
     }
     &__cards {
+      margin-top: 64px;
       flex-direction: row;
       justify-content: space-between;
       display: flex;
@@ -33,7 +33,7 @@
 .story-card {
   @include for-large {
     width: 420px;
-    heigh: 240px;
+    height: 240px;
     margin-right: 60px;
     position: relative;
     padding-left: 60px;

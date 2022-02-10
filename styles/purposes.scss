@@ -1,7 +1,7 @@
 @import "layout.scss";
 .purposes {
   @include for-small {
-    margin-top: 125px;
+    margin-top: 120px;
     &__header {
       font-family: "Mulish", sans-serif;
       text-transform: uppercase;
@@ -13,8 +13,7 @@
       margin-bottom: 20px;
     }
     &__cards {
-      margin-right: 60px;
-      margin-left: 60px;
+      margin: 50px 60px 0px;
     }
   }
   @include for-large {
@@ -25,16 +24,16 @@
       font-weight: 400;
       font-size: 30px;
       line-height: 60px;
-      margin-right: 60px;
-      margin-bottom: 50px;
     }
     &__cards {
+      margin-top: 50px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
   }
   .purpose {
+    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
     @include for-small {
       background-color: white;
       display: flex;

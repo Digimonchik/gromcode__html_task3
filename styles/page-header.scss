@@ -3,7 +3,7 @@
   display: flex;
   &__text {
     padding-left: 10px;
-    font-family: "Mulish", sans-serif;
+    font-family: "Mulish";
     font-weight: 600;
     font-size: 20px;
     vertical-align: 50px;
@@ -22,25 +22,26 @@
     box-sizing: border-box;
     display: flex;
     margin: 30px 160px;
-    justify-content: space-between;
     &__navigation {
       box-sizing: border-box;
-      width: 640px;
-      margin-right: 20px;
+      margin-left: auto;
+      width: 540px;
       display: flex;
       justify-content: flex-end;
       &_item {
         line-height: 20px;
-        font-family: "Mulish", sans-serif;
-        padding: 15px 20px 20px 20px;
+        margin: auto;
+        font-family: "Mulish";
+        font-style: normal;
         font-size: 14px;
         text-decoration: none;
-        color: black;
+        color: var(--color);
         font-weight: 600;
       }
     }
     &__button {
       font-family: "Mulish", sans-serif;
+      margin-left: 20px;
       font-weight: 700;
       font-size: 14px;
       line-height: 20px;
@@ -54,10 +55,10 @@
     }
   }
   @include for-small {
-    padding-left: 80px;
+    margin: 0px 80px;
     box-sizing: border-box;
     display: flex;
-    width: 640px;
+
     &__navigation {
       display: none;
     }

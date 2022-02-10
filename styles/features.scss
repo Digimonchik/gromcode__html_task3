@@ -29,6 +29,7 @@
   }
 }
 .feature {
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
   @include for-large {
     background-color: white;
     width: 320px;

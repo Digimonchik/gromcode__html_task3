@@ -7,6 +7,7 @@
       font-family: "Mulish", sans-serif;
       font-weight: 400;
       font-size: 30px;
+      box-sizing: border-box;
       text-transform: uppercase;
       line-height: 60px;
     }
@@ -16,9 +17,10 @@
       justify-content: space-between;
     }
     &__card {
+      box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
       background-color: white;
       height: 220px;
-      margin-top: 38px;
+      margin-top: 48px;
       padding-top: 40px;
       border: 2px;
       width: 320px;
@@ -26,10 +28,10 @@
       position: relative;
       box-shadow: 0px 20px 60px 0px #3145f41a;
       &:nth-child(2) {
-        margin-top: 78px;
+        margin-top: 88px;
       }
       &:last-child {
-        margin-top: 118px;
+        margin-top: 128px;
       }
       &_icon {
         position: absolute;
@@ -85,11 +87,12 @@
       margin-bottom: 20px;
     }
     &__card {
+      box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+      border: 3px solid red;
       background-color: white;
       height: 180px;
       margin-top: 40px;
-      padding-top: 40px;
-      border: 2px;
+      padding: 40px;
       width: 520px;
       box-sizing: border-box;
       position: relative;
@@ -114,8 +117,8 @@
         text-transform: uppercase;
       }
       &_description {
-        font-family: "Mulish", sans-serif;
-        font-weight: 700;
+        font-family: "Mulish";
+        font-weight: 400;
         font-size: 16px;
         line-height: 30px;
         margin-top: 10px;
