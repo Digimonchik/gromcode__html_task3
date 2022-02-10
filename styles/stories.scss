@@ -1,7 +1,7 @@
 @import "layout.scss";
 .stories {
   @include for-large {
-    margin: 120px 160px 80px 160px;
+    margin: 120px 160px 120px 160px;
     &__header {
       font-family: "Mulish", sans-serif;
       text-transform: uppercase;

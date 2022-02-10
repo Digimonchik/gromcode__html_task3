@@ -35,13 +35,13 @@
     width: 320px;
     height: 290px;
     box-sizing: border-box;
-    margin-top: 58px;
+    margin-top: 60px;
     position: relative;
     &:nth-child(2) {
-      margin-top: 88px;
+      margin-top: 100px;
     }
     &:last-child {
-      margin-top: 128px;
+      margin-top: 140px;
     }
     &_header {
       display: flex;

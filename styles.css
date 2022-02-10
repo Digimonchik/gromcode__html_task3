@@ -382,7 +382,6 @@
   }
   .work-flow__card {
     box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
-    border: 3px solid red;
     background-color: white;
     height: 180px;
     margin-top: 40px;
@@ -472,14 +471,14 @@
     width: 320px;
     height: 290px;
     box-sizing: border-box;
-    margin-top: 58px;
+    margin-top: 60px;
     position: relative;
   }
   .feature:nth-child(2) {
-    margin-top: 88px;
+    margin-top: 100px;
   }
   .feature:last-child {
-    margin-top: 128px;
+    margin-top: 140px;
   }
   .feature_header {
     display: flex;
@@ -590,18 +589,18 @@
     content: "Who is VanGoux for";
   }
   .users_cards {
-    margin-top: 50px;
+    margin-top: 60px;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-.card {
+.user {
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
 }
 @media screen and (max-width: 1024px) {
-  .card {
+  .user {
     box-sizing: border-box;
     padding: 20px;
     width: 250px;
@@ -609,10 +608,10 @@
     background-color: white;
     margin-bottom: 20px;
   }
-  .card:nth-child(n+1) {
+  .user:nth-child(n+1) {
     margin-right: 20px;
   }
-  .card_header {
+  .user_header {
     font-family: "Mulish", sans-serif;
     text-transform: uppercase;
     font-weight: 600;
@@ -620,7 +619,7 @@
     line-height: 40px;
     color: #1967fa;
   }
-  .card_description {
+  .user_description {
     font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -629,13 +628,13 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .card {
+  .user {
     width: 360px;
     height: 160px;
     background-color: white;
     margin-bottom: 20px;
   }
-  .card_header {
+  .user_header {
     margin: 20px;
     font-family: "Mulish", sans-serif;
     text-transform: uppercase;
@@ -644,7 +643,7 @@
     line-height: 40px;
     color: #1967fa;
   }
-  .card_description {
+  .user_description {
     font-family: "Mulish", sans-serif;
     font-weight: 400;
     color: #11223f;
@@ -674,7 +673,7 @@
 }
 @media screen and (min-width: 1024px) {
   .purposes {
-    margin: 120px 160px;
+    margin: 120px 160px 80px;
   }
   .purposes__header {
     font-family: "Mulish", sans-serif;
@@ -684,7 +683,7 @@
     line-height: 60px;
   }
   .purposes__cards {
-    margin-top: 50px;
+    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -778,6 +777,7 @@
   }
   .consultation__title {
     color: white;
+    width: 640px;
     font-family: "Mulish", sans-serif;
     text-transform: uppercase;
     font-weight: 400;
@@ -791,7 +791,7 @@
     font-weight: 400;
     font-size: 20px;
     width: 640px;
-    margin-top: 48px;
+    margin-top: 60px;
     line-height: 40px;
     color: white;
   }
@@ -813,7 +813,7 @@
 
 @media screen and (min-width: 1024px) {
   .stories {
-    margin: 120px 160px 80px 160px;
+    margin: 120px 160px 120px 160px;
   }
   .stories__header {
     font-family: "Mulish", sans-serif;
