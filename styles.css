@@ -203,7 +203,7 @@
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
   background-color: white;
   box-sizing: border-box;
-  box-shadow: 0px 20px 60px 0px #3145f41a;
+  box-shadow: 0px 20px 60px 0px rgba(49, 69, 244, 0.1019607843);
   width: 540px;
   height: 280px;
   position: relative;
@@ -318,7 +318,7 @@
     width: 320px;
     box-sizing: border-box;
     position: relative;
-    box-shadow: 0px 20px 60px 0px #3145f41a;
+    box-shadow: 0px 20px 60px 0px rgba(49, 69, 244, 0.1019607843);
   }
   .work-flow__card:nth-child(2) {
     margin-top: 88px;
@@ -992,7 +992,7 @@
     font-size: 14px;
     vertical-align: 50px;
     line-height: 20px;
-    background-color: #1968fc0d;
+    background-color: rgba(25, 104, 252, 0.0509803922);
     color: #1968fc;
     margin-right: 50px;
   }
@@ -1037,10 +1037,13 @@
 body {
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png");
   background-size: cover;
+  margin: 0px;
+  padding: 0px;
 }
 
 .page {
-  margin: auto;
+  border: 2px dashed red;
+  margin: 0px auto;
 }
 @media screen and (max-width: 1024px) {
   .page {

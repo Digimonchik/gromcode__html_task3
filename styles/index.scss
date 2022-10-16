@@ -30,9 +30,12 @@
 body {
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png");
   background-size: cover;
+  margin: 0px;
+  padding: 0px;
 }
 .page {
-  margin: auto;
+  border: 2px dashed red;
+  margin: 0px auto;
   @include for-small {
     width: 640px;
   }
