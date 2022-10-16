@@ -21,7 +21,7 @@
   @include for-large {
     box-sizing: border-box;
     display: flex;
-    margin: 30px 160px;
+    margin: 30px;
     &__navigation {
       box-sizing: border-box;
       margin-left: auto;
@@ -55,7 +55,7 @@
     }
   }
   @include for-small {
-    margin: 0px 80px;
+    margin: 0px 0px;
     box-sizing: border-box;
     display: flex;
 

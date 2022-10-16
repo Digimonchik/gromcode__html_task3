@@ -1,7 +1,7 @@
 @import "layout.scss";
 .stories {
   @include for-large {
-    margin: 120px 160px 120px 160px;
+    margin: 120px 0px;
     &__header {
       font-family: "Mulish", sans-serif;
       text-transform: uppercase;
@@ -27,6 +27,17 @@
       margin-left: 60px;
       margin-right: 60px;
       margin-bottom: 50px;
+    }
+  }
+  @include for-extra-small {
+    margin-top: 60px;
+    &__header {
+      font-family: "Mulish", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 60px;
+      margin: 10px;
     }
   }
 }
@@ -64,6 +75,30 @@
     &__image {
       position: absolute;
       left: 60px;
+    }
+    &__header {
+      font-family: "Mulish", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 40px;
+    }
+    &__description {
+      font-family: "Mulish", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+  @include for-small {
+    margin-right: 20px;
+    position: relative;
+    padding-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    &__image {
+      position: absolute;
+      left: 20px;
+      top: 5px;
     }
     &__header {
       font-family: "Mulish", sans-serif;

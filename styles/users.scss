@@ -20,8 +20,33 @@
       margin-left: 60px;
     }
   }
+  @include for-extra-small {
+    &__header {
+      font-family: "Mulish", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 60px;
+      margin-top: 125px;
+      margin-left: 20px;;
+    }
+    &__header::before {
+      content: "Use Cases";
+    }
+    &_cards {
+      width: 340px;
+      margin-left: 20px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+  
+    }
+  }
   @include for-large {
-    margin: 0px 160px;
+    margin: 0px;
     &__header {
       font-family: "Mulish", sans-serif;
       text-transform: uppercase;

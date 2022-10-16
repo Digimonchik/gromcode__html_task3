@@ -110,4 +110,46 @@
       max-width: 20px;
     }
   }
+
+  @include for-extra-small {
+    height: 130px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    padding: 40px;
+    &__navigation {
+      display: none;
+    }
+    &__logo {
+      display: flex;
+      &_icon {
+        max-height: 100%;
+      }
+      &_text {
+        padding-top: 5px;
+        padding-left: 10px;
+        margin: 0px;
+        font-family: "Mulish", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        background-color: #1968fc0d;
+        color: #1968fc;
+      }
+    }
+    &__image {
+      width: 60px;
+      height: 55px;
+      bottom: 0px;
+      right: 0px;
+      position: absolute;
+    }
+    &__social-link {
+      padding: 15px;
+      margin-left: 10px;
+      display: inline-flex;
+      align-items: center;
+      max-height: 20px;
+      max-width: 20px;
+    }
+  }
 }

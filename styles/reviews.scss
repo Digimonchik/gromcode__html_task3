@@ -3,8 +3,7 @@
 .reviews {
   @include for-large {
     min-width: 1120px;
-    margin-left: 160px;
-    margin-right: 160px;
+
     display: flex;
     justify-content: space-between;
   }
@@ -97,5 +96,53 @@
       line-height: 30px;
       color: #11223f;
     }
+  }
+  @include for-extra-small {
+    background-color: white;
+    box-sizing: border-box;
+    margin: 10px;
+    width: 350px;
+    height: 200px;
+    position: relative;
+    &_brackets {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 30px;
+      right: 30px;
+    }
+    &_image {
+      width: 70px;
+      height: 70px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    &_description {
+      position: absolute;
+      left: 120px;
+      top: 30px;
+    }
+    &_name {
+      font-family: "Mulish", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    &_info {
+      font-family: "Mulish", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 30px;
+      color: #1967fa;
+    }
+    &_text {
+      margin: 20px;
+      font-family: "Mulish", sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 30px;
+      color: #11223f;
+    }
+    
   }
 }
